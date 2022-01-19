@@ -15,10 +15,11 @@ Para alterar as origens e destinos dos arquivos salvos, favor alterar o arquivo 
 	"procdata": dados como dados pre processados que serão utilizados para treinar e validar o modelo
 
 Abaixo segue um exemplo:
-{
-"modeldata":"https://s3model.blob.core.windows.net/modeldata/",
-"procdata":"https://s3model.blob.core.windows.net/prodata/"
-}
+
+	{	
+	"modeldata":"https://s3model.blob.core.windows.net/modeldata/",
+	"procdata":"https://s3model.blob.core.windows.net/prodata/"
+	}
 
 -------------------------------------------------------------
 
@@ -39,8 +40,7 @@ Exemplo:
 
 ## AutoMl
 
-Executar o notebook IFood_AutoML_h2o no diretório AutoML para criar um modelo, 
-tempo para criação de um minuto na configuração atual.
+Executar o notebook IFood_AutoML_h2o no diretório AutoML para criar um modelo, tempo para criação de um minuto na configuração atual.
 
 -------------------------------------------------------------
 
