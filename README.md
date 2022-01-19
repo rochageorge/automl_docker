@@ -32,7 +32,7 @@ Estrutura do projeto:
 
 -------------------------------------------------------------
 
-Installation
+## Installation
 Dependencies
 This application requires:
 
