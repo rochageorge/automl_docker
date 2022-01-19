@@ -31,8 +31,8 @@ No diretório /IFood_ML/IFood_API/flask_docker/ digite no terminal o seguinte co
 A última linha mostrará a porta que o docker fez o bind com o host.
 Exemplo:
 
-CONTAINER ID   IMAGE          COMMAND             CREATED         STATUS                  PORTS                                         NAMES
-ac5bb0615e0a   flask_docker   "python3 exec.py"   2 seconds ago   Up Less than a second   0.0.0.0:49171->8000/tcp, :::49171->8000/tcp   serene_matsumoto
+	CONTAINER ID   IMAGE          COMMAND             CREATED         STATUS                  PORTS                                         NAMES
+	ac5bb0615e0a   flask_docker   "python3 exec.py"   2 seconds ago   Up Less than a second   0.0.0.0:49171->8000/tcp, :::49171->8000/tcp   serene_matsumoto
 
 
 -------------------------------------------------------------
