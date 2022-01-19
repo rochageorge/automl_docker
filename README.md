@@ -3,7 +3,7 @@ The goal of the exercises below is to evaluate the candidate knowledge and probl
 
 https://github.com/ifood/ifood-data-ml-engineer-test
 
-#### Projeto: API para servir modelos com Flask e Docker
+#### Projeto: API para servir modelos com Flask, Gunicorn e Docker
 #### Autor: George Rocha
 
 Estrutura do projeto:
