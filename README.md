@@ -62,7 +62,7 @@ Exemplo:
 
 -------------------------------------------------------------
 
-## AutoMl
+## AutoML
 
 Executar o notebook IFood_AutoML_h2o no diretório AutoML para criar um modelo, tempo para criação de um minuto na configuração atual.
 
