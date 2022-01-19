@@ -30,6 +30,20 @@ Estrutura do projeto:
 	│       └── example.ipynb
 	└── READ.me
 
+-------------------------------------------------------------
+
+Installation
+Dependencies
+This application requires:
+
+	Python (>= 3.7)
+	Docke ()
+
+Please follow the link bellow for more information on docker:
+	
+	https://docs.docker.com/engine/install/ubuntu/
+
+-------------------------------------------------------------
 
 Alteração da url de origem dos dados
 
