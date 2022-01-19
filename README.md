@@ -33,11 +33,11 @@ Estrutura do projeto:
 -------------------------------------------------------------
 
 ## Installation
-Dependencies
-This application requires:
+
+Dependencies, this application requires:
 
 	Python (>= 3.7)
-	Docke ()
+	Docker (= 20.10.12)
 
 Please follow the link bellow for more information on docker:
 	
@@ -45,7 +45,7 @@ Please follow the link bellow for more information on docker:
 
 -------------------------------------------------------------
 
-Alteração da url de origem dos dados
+## Alteração da url de origem dos dados
 
 Para alterar as origens e destinos dos arquivos salvos, favor alterar o arquivo path.json onde:
 
