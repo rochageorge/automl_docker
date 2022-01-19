@@ -5,9 +5,33 @@ https://github.com/ifood/ifood-data-ml-engineer-test
 
 #### Projeto: API para servir modelos com Flask e Docker
 #### Autor: George Rocha
-#### Data: 19/01/2022
 
-** Alteração da url de origem dos dados
+Estrutura do projeto:
+
+	.
+	├── AutoML
+	│   └── AutoML_h2o.ipynb
+	├── AWS_infra
+	│   └── AWS Infrastructure.pdf
+	├── IFood_API
+	│   ├── docs
+	│   │   ├── Document Live.txt
+	│   │   └── Document Static.html
+	│   ├── flask_docker
+	│   │   ├── Dockerfile
+	│   │   ├── exec.py
+	│   │   ├── mls.py
+	│   │   ├── my_app.py
+	│   │   ├── path.json
+	│   │   ├── requirements.txt
+	│   │   ├── setup.py
+	│   │   └── wsgi.py
+	│   └── notebook
+	│       └── example.ipynb
+	└── READ.me
+
+
+Alteração da url de origem dos dados
 
 Para alterar as origens e destinos dos arquivos salvos, favor alterar o arquivo path.json onde:
 
@@ -58,3 +82,4 @@ Post:
       prediction = pd.read_json(r)
 
 --------------------------------------------------------------
+
