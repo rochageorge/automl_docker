@@ -5,6 +5,8 @@ https://github.com/ifood/ifood-data-ml-engineer-test
 
 #### Projeto: API para servir modelos com Flask, Gunicorn e Docker
 #### Autor: George Rocha
+#### Status: Em desenvolvimento
+
 
 Estrutura do projeto:
 
@@ -83,7 +85,23 @@ Exemplo:
 
 ## AutoML
 
-Executar o notebook IFood_AutoML_h2o no diretório AutoML para criar um modelo, tempo para criação de um minuto na configuração atual.
+Para executar o autoML para criar um modelo, favor alterar os campos no arquivo param_h2o.json com os dados a serem lidos pelo script e depois executar no terminal:
+	
+	python h2o_script.py
+
+Exemplo(param_h2o.json):
+	
+	{
+	"sourcePath" : "https://s3model.blob.core.windows.net/prodata/merged_proc_data.csv", <- Local onde estão os dados pre processados.
+	"savingPath" : "https://s3model.blob.core.windows.net/modeldata/", <- Local onde salvar os arquivos gerados.
+	"target" : "average_ticket", <- Coluna desejada para previsão
+	"excludeAlgos" : "DeepLearning", <- Exclusão dos algoritmos no treino.
+	"algos": ["DRF", "GLM", "XGBoost", "GBM", "DeepLearning", "StackedEnsemble"], <- Algoritmos disponíveis.
+	"maxModels" : "10", <- Máximo de modelos para comparaçao.
+	"seed" : "4", <- Seed para reprodutividade.
+	"maxTrainingTime" : "45", <- Tempo máximo de treinamento em segundos.
+	"classification" : "False"  <- Sinalização de que é ou não é um prblema de classificação.
+	}
 
 -------------------------------------------------------------
 
