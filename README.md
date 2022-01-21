@@ -75,6 +75,7 @@ Exemplo:
 	CONTAINER ID   IMAGE          COMMAND             CREATED         STATUS                  PORTS                                         NAMES
 	ac5bb0615e0a   flask_docker   "python3 exec.py"   2 seconds ago   Up Less than a second   0.0.0.0:49171->8000/tcp, :::49171->8000/tcp   serene_matsumoto
 
+No exemplo da saída acima, a porta do bind será 0.0.0.0:49171
 
 -------------------------------------------------------------
 ## Documentation
@@ -88,6 +89,8 @@ Exemplo:
 Para executar o autoML para criar um modelo, favor alterar os campos no arquivo param_h2o.json com os dados a serem lidos pelo script e depois executar no terminal:
 	
 	python h2o_script.py
+
+Há também a opção de se executar o notebook, o notebook também busca o parametros no arquivo param_h2o.json.
 
 Exemplo(param_h2o.json):
 	
