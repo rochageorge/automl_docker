@@ -1,0 +1,12 @@
+{
+"sourcePath" : "https://s3model.blob.core.windows.net/prodata/merged_proc_data.csv",
+"savingPath" : "https://s3model.blob.core.windows.net/modeldata/",
+"target" : "average_ticket",
+"excludeAlgos" : "DeepLearning",
+"algos": ["DRF", "GLM", "XGBoost", "GBM", "DeepLearning", "StackedEnsemble"],
+"maxModels" : "10",
+"seed" : "2",
+"maxTrainingTime" : "45",
+"classification" : "False" 
+}
+
