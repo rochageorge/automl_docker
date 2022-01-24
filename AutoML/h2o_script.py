@@ -57,8 +57,11 @@ model_date = best_model.split('_')[-2]
 test_name = 'test_' + model_id
 train_name = 'train_' + model_id
 
-test.as_data_frame().convert_dtypes().to_pickle(test_name + '.csv')
-train.as_data_frame().convert_dtypes().to_pickle(train_name + '.csv')
+# test.as_data_frame().convert_dtypes().to_pickle(test_name + '.pickle')
+# train.as_data_frame().convert_dtypes().to_pickle(train_name + '.pickle')
+
+test.as_data_frame().convert_dtypes().to_csv(test_name + '.csv', index=False)
+train.as_data_frame().convert_dtypes().to_csv(train_name + '.csv', index=False)
 
 model_path = saving_path + model_name
 
