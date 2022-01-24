@@ -6,16 +6,10 @@
 Project's structure:
 
 	.
-	├── AutoML
-	│   ├── h2o_notebook.ipynb
-	│   ├── h2o_script.py
-	│   ├── param_h2o.json
-	├── AWS_infra
-	│   └── AWS Infrastructure.pdf
 	├── API
 	│   ├── docs
 	│   │   ├── Document Live.txt
-	│   │   └── Document Static.html
+	│   │   └── Document Static.txt
 	│   ├── flask_docker
 	│   │   ├── Dockerfile
 	│   │   ├── exec.py
@@ -27,7 +21,15 @@ Project's structure:
 	│   │   └── wsgi.py
 	│   └── notebook
 	│       └── example.ipynb
+	├── AutoML
+	│   ├── h2o_notebook.ipynb
+	│   ├── h2o_script.py
+	│   └── param_h2o.json
+	├── AWS_infra
+	│   └── AWS Infrastructure.pdf
+	├── LICENSE
 	└── README.md
+
 
 -------------------------------------------------------------
 
