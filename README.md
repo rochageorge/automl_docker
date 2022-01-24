@@ -12,7 +12,7 @@ Project's structure:
 	│   ├── param_h2o.json
 	├── AWS_infra
 	│   └── AWS Infrastructure.pdf
-	├── IFood_API
+	├── API
 	│   ├── docs
 	│   │   ├── Document Live.txt
 	│   │   └── Document Static.html
