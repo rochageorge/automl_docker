@@ -12,7 +12,9 @@ Estrutura do projeto:
 
 	.
 	├── AutoML
-	│   └── AutoML_h2o.ipynb
+	│   ├── h2o_notebook.ipynb
+	│   ├── h2o_script.py
+	│   ├── param_h2o.json
 	├── AWS_infra
 	│   └── AWS Infrastructure.pdf
 	├── IFood_API
@@ -30,7 +32,7 @@ Estrutura do projeto:
 	│   │   └── wsgi.py
 	│   └── notebook
 	│       └── example.ipynb
-	└── READ.me
+	└── README.md
 
 -------------------------------------------------------------
 
@@ -98,12 +100,10 @@ Exemplo(param_h2o.json):
 	"sourcePath" : "https://s3model.blob.core.windows.net/prodata/merged_proc_data.csv", <- Local onde estão os dados pre processados.
 	"savingPath" : "https://s3model.blob.core.windows.net/modeldata/", <- Local onde salvar os arquivos gerados.
 	"target" : "average_ticket", <- Coluna desejada para previsão
-	"excludeAlgos" : "DeepLearning", <- Exclusão dos algoritmos no treino.
 	"algos": ["DRF", "GLM", "XGBoost", "GBM", "DeepLearning", "StackedEnsemble"], <- Algoritmos disponíveis.
 	"maxModels" : "10", <- Máximo de modelos para comparaçao.
 	"seed" : "4", <- Seed para reprodutividade.
 	"maxTrainingTime" : "45", <- Tempo máximo de treinamento em segundos.
-	"classification" : "False"  <- Sinalização de que é ou não é um prblema de classificação.
 	}
 
 -------------------------------------------------------------
