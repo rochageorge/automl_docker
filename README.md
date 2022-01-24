@@ -3,12 +3,12 @@ The goal of the exercises below is to evaluate the candidate knowledge and probl
 
 https://github.com/ifood/ifood-data-ml-engineer-test
 
-#### Projeto: API para servir modelos com Flask, Gunicorn e Docker
-#### Autor: George Rocha
-#### Status: Em desenvolvimento
+#### Project: API for model serving with Flask, Gunicorn and Docker
+#### Author: George Rocha
+#### Status: In development
 
 
-Estrutura do projeto:
+Project's structure:
 
 	.
 	├── AutoML
@@ -49,14 +49,14 @@ Please follow the link bellow for more information on docker:
 
 -------------------------------------------------------------
 
-## Alteração da url de origem dos dados
+## URL source
 
-Para alterar as origens e destinos dos arquivos salvos, favor alterar o arquivo path.json onde:
+To change the source and saving path, please change the path.json path:
 
-	"modeldata": dados como informações salvas pelo AutoML, info, modelos, arquivos de teste,
-	"procdata": dados como dados pre processados que serão utilizados para treinar e validar o modelo
+	"modeldata": URL or path where AutoML files will be saved, such as binary models, info, test and train csv files.
+	"procdata": URL or path where pre processed data will be saved to feed the models for training and testing.
 
-Abaixo segue um exemplo:
+Example:
 
 	{	
 	"modeldata":"https://s3model.blob.core.windows.net/modeldata/",
@@ -65,19 +65,20 @@ Abaixo segue um exemplo:
 
 -------------------------------------------------------------
 
-## Execução
+## Execution
 
-No diretório /IFood_ML/IFood_API/flask_docker/ digite no terminal o seguinte comando:
+Inside the folder /IFood_ML/IFood_API/flask_docker/ open a terminal and type the command bellow:
 	
 	python setup.py
 
-A última linha mostrará a porta que o docker fez o bind com o host.
-Exemplo:
+The last line will show the docke's binding port with the host.
+
+Example:
 
 	CONTAINER ID   IMAGE          COMMAND             CREATED         STATUS                  PORTS                                         NAMES
 	ac5bb0615e0a   flask_docker   "python3 exec.py"   2 seconds ago   Up Less than a second   0.0.0.0:49171->8000/tcp, :::49171->8000/tcp   serene_matsumoto
 
-No exemplo da saída acima, a porta do bind será 0.0.0.0:49171
+The binding port is 0.0.0.0:49171 in the example above.
 
 -------------------------------------------------------------
 ## Documentation
@@ -88,13 +89,13 @@ No exemplo da saída acima, a porta do bind será 0.0.0.0:49171
 
 ## AutoML
 
-Para executar o autoML para criar um modelo, favor alterar os campos no arquivo param_h2o.json com os dados a serem lidos pelo script e depois executar no terminal:
+To use the H2O AutoML for model creation, please alter the parameters in the param_h2o.json and then execute the following command:
 	
 	python h2o_script.py
 
-Há também a opção de se executar o notebook, o notebook também busca o parametros no arquivo param_h2o.json.
+You can also use the notebook to create the models, it also uses the param_h2o.json file.
 
-Exemplo(param_h2o.json):
+Example (param_h2o.json):
 	
 	{
 	"sourcePath" : "https://s3model.blob.core.windows.net/prodata/merged_proc_data.csv", <- Local onde estão os dados pre processados.
@@ -108,8 +109,9 @@ Exemplo(param_h2o.json):
 
 -------------------------------------------------------------
 
-## Exemplo:
-Executar o notebook exemplo.ipynb IFood_ML/IFood_API/notebooks para enviar e receber os dados. 
+## Example:
+
+Execute the exemplo.ipynb notebook on the IFood_ML/IFood_API/notebooks to send and receive data. 
 
 Get: 
       
