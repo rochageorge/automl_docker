@@ -1,0 +1,4 @@
+{
+"modeldata":"https://s3model.blob.core.windows.net/modeldata/",
+"procdata":"https://s3model.blob.core.windows.net/prodata/"
+}
