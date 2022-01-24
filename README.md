@@ -1,8 +1,3 @@
-# IFood MLE Test
-The goal of the exercises below is to evaluate the candidate knowledge and problem solving expertise regarding the main development focuses for the iFood ML Platform team: MLOps and Feature Store development.
-
-https://github.com/ifood/ifood-data-ml-engineer-test
-
 #### Project: API for model serving with Flask, Gunicorn and Docker
 #### Author: George Rocha
 #### Status: In development
