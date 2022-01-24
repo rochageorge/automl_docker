@@ -64,7 +64,7 @@ Example:
 
 ## Execution
 
-Inside the folder /IFood_ML/IFood_API/flask_docker/ open a terminal and type the command bellow:
+Inside the folder /ML/API/flask_docker/ open a terminal and type the command bellow:
 	
 	python setup.py
 
@@ -108,7 +108,7 @@ Example (param_h2o.json):
 
 ## Example:
 
-Execute the exemplo.ipynb notebook on the IFood_ML/IFood_API/notebooks to send and receive data. 
+Execute the exemplo.ipynb notebook on the ML/API/notebooks to send and receive data. 
 
 Get: 
       
